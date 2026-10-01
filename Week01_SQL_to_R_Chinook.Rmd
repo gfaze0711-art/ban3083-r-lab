@@ -1,6 +1,6 @@
 ---
 title: "Week 1: From SQL to R with the Chinook Database"
-author: "Student Name: [Type Your Name Here]"
+author: "Student Name: [Gabriel Badillo]"
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -196,7 +196,6 @@ INNER JOIN Album AS al ON ar.ArtistId = al.ArtistId
 GROUP BY ar.ArtistId, ar.Name
 ORDER BY AlbumCount DESC
 LIMIT 10;
-```
 
 ### Exercise 2: Visualize Your SQL Output with `ggplot2`
 Run the chunk below to plot your `top_artists` SQL result. Try changing `fill = "steelblue"` to another color (like `"darkorange"`, `"seagreen"`, or `"firebrick"`) and updating the chart `title`!
