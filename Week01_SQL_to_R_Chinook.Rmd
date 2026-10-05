@@ -1,6 +1,6 @@
 ---
 title: "Week 1: From SQL to R with the Chinook Database"
-author: "Student Name: [Type Your Name Here]"
+author: "Student Name: Gabriel Badillo"
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -203,10 +203,10 @@ Run the chunk below to plot your `top_artists` SQL result. Try changing `fill = 
 
 ```{r plot-top-artists}
 ggplot(top_artists, aes(x = reorder(ArtistName, AlbumCount), y = AlbumCount)) +
-  geom_col(fill = "steelblue") +
+  geom_col(fill = "seagreen") +
   coord_flip() +
   labs(
-    title = "Top 10 Artists by Number of Albums in Chinook",
+    title = "Chinook's Top 10 Artists Ranked by Album Count",
     x = "Artist",
     y = "Number of Albums"
   ) +
